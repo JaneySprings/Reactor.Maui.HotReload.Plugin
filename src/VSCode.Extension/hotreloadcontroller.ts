@@ -12,7 +12,7 @@ export class HotReloadController {
             this.process.kill();
 
         const extensionPath = extensions.getExtension(extensionId)?.extensionPath ?? '';
-        const assemblyPath: string = path.join(extensionPath, "bin", "MauiReactor.HotReloadConsole.dll"); 
+        const assemblyPath: string = path.join(extensionPath, "extension", "bin", "MauiReactor.HotReloadConsole.dll"); 
         
         const cwd = path.dirname(project);
         HotReloadController.process = exec(`dotnet ${assemblyPath} -f ${framework}`, { cwd: cwd });

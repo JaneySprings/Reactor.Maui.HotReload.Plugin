@@ -1,0 +1,3 @@
+[submodule "src/Reactor.Maui"]
+	path = src/Reactor.Maui
+	url = https://github.com/adospace/reactorui-maui

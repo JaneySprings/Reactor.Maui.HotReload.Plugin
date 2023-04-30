@@ -1,0 +1,4 @@
+#bin/bash
+
+dotnet build ./src/Reactor.Maui/src/MauiReactor.HotReloadConsole/MauiReactor.HotReloadConsole.csproj -c:release -p:PackAsTool=false -o:./extension/bin -p:SatelliteResourceLanguages=en
+vsce package
