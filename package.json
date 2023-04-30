@@ -1,0 +1,32 @@
+{
+  "name": "reactormaui-hotreload",
+  "displayName": "Reactor.Maui.HotReload",
+  "publisher": "nromanov",
+  "description": "todo",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "extensionDependencies": [
+    "nromanov.dotnet-meteor"
+  ],
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:csharp",
+    "onLanguage:fsharp",
+    "workspaceContains:**/*.{csproj,fsproj,sln,slnf,csx}"
+  ],
+  "main": "./extension/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.77.0",
+    "@types/node": "16.x",
+    "typescript": "^4.8.4"
+  }
+}
