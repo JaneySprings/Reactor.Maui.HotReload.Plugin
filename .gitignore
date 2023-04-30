@@ -1,0 +1,7 @@
+extension
+dist
+node_modules
+.vscode-test/
+**/bin
+**/obj
+*.vsix
