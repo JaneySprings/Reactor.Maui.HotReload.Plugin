@@ -2,6 +2,7 @@
   "name": "reactormaui-hotreload",
   "displayName": "Reactor.Maui.HotReload",
   "publisher": "nromanov",
+  "icon": "res/icon.png",
   "description": "todo",
   "version": "1.0.0",
   "engines": {
